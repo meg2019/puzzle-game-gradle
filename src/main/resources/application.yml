@@ -1,0 +1,16 @@
+server:
+  error:
+    include-message: always
+spring:
+  datasource:
+    url: jdbc:h2:mem:puzzle-game-db
+  jpa:
+    defer-datasource-initialization: true
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+springfox:
+  documentation:
+    swagger-ui:
+      base-url: docs
